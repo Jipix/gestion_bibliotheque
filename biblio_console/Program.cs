@@ -1,12 +1,16 @@
-﻿using System;
+using System;
+using biblio_dll;
 
 namespace biblio_console
 {
 	class MainClass
 	{
+
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
+			Livre l = new Livre ();
+			Console.WriteLine(l);
+			Console.ReadLine ();
 		}
 	}
 }
