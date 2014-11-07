@@ -1,21 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 //plop
 namespace biblio_dll
 {
+
 	/// <summary>
 	/// Objet bibliotheque.
 	/// </summary>
 	public class Bibliotheque
 	{
-		public List<Livre> Bibli { get; set; }
+		public ArrayList Bibli = new ArrayList ();
 
 		/// <summary>
-		/// Ajout d'un livre dans la bibliotheque.
+		///  Ctor Ajout d'un livre dans la bibliotheque.
 		/// </summary>
 		public Bibliotheque ()
 		{
-			Bibli = new List<Livre>();
+		}
+
+		/// <summary>
+		/// Ajouter un livre.
+		/// </summary>
+		public void AjouterUnLivre (object bouquin)
+		{
+			Bibli.Add (bouquin);
+		}
+
+		/// <summary>
+		/// Affiche ma bibli.
+		/// </summary>
+		public void AfficheMaBibliothéque ()
+		{
+			foreach (object Livre in Bibli) 
+			{
+				Console.WriteLine (Bibli.ToString());
+			} 
 		}
 	}
 }
