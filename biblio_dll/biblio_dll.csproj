@@ -31,14 +31,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classe\Livre.cs" />
     <Compile Include="Classe\Bibliotheque.cs" />
-    <Compile Include="Classe\Auteur.cs" />
-    <Compile Include="Classe\Collection.cs" />
-    <Compile Include="Classe\CodeISBN.cs" />
-    <Compile Include="Classe\Editeur.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

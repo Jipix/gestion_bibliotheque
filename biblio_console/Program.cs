@@ -1,6 +1,6 @@
 using System;
 using biblio_dll;
-//plop
+
 namespace biblio_console
 {
 	class MainClass
@@ -9,7 +9,9 @@ namespace biblio_console
 		public static void Main (string[] args)
 		{
 			Livre l = new Livre ();
-			Console.WriteLine(l);
+			l.PrenomAuteur = "Philip";
+			l.NomAuteur = "K.Dick";
+			Console.WriteLine (l.NomCompletAuteur());
 			Console.ReadLine ();
 		}
 	}

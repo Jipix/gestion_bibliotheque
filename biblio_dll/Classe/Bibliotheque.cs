@@ -8,15 +8,14 @@ namespace biblio_dll
 	/// </summary>
 	public class Bibliotheque
 	{
-		public List<Livre> bibli { get; set; }
+		public List<Livre> Bibli { get; set; }
 
 		/// <summary>
 		/// Ajout d'un livre dans la bibliotheque.
 		/// </summary>
 		public Bibliotheque ()
 		{
-			bibli = new List<Livre>();
-			Console.WriteLine(bibli);
+			Bibli = new List<Livre>();
 		}
 	}
 }
