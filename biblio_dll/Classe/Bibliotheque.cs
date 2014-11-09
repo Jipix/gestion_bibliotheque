@@ -7,7 +7,7 @@ namespace biblio_dll
 	/// <summary>
 	/// Objet bibliotheque.
 	/// </summary>
-	public class Bibliotheque						//Dans cette class l'object bouquin est utilisé comme Livre bouquin=new Livre
+	public class Bibliotheque
 	{
 		public ArrayList Bibli = new ArrayList ();
 
@@ -45,25 +45,6 @@ namespace biblio_dll
 				bouquin.Affiche ();
 				Console.WriteLine ();
 			} 
-		}
-		
-			
-		/// <summary>
-		/// Recherche un livre en fonction de son ???.
-		/// </summary>
-		public void ChercheUnLivre (object bouquin)
-		{
-			bool i=Bibli.Contains (bouquin);
-			if (i == true) 
-			{
-				object s = Bibli [Bibli.IndexOf (bouquin)];
-				Livre book = (Livre)s;		//Conversion explicite.
-				book.Affiche ();
-			} 
-			else 
-			{
-				Console.WriteLine ("Le Livre recherché n'est pas présent dans la bibliothéque");
-			}
 		}
 
 		/// <summary>
@@ -105,6 +86,23 @@ namespace biblio_dll
 			foreach (Livre bouquin in Bibli) {
 				bouquin.Affiche ();
 				Console.WriteLine ();
+			}
+		}
+
+		/// <summary>
+		/// Recherche un livre.
+		/// </summary>
+		public void RechercheUnLivre (object bouquin)
+		{
+			bool i=Bibli.Contains (bouquin);
+			if (i == true) 
+			{
+				Livre bouquinRechercher=(Livre)bouquin;
+				bouquinRechercher.Affiche ();
+			} 
+			else 
+			{
+				Console.WriteLine ("Le Livre n'est pas présent dans votre bibliothéque");
 			}
 		}
 	}
