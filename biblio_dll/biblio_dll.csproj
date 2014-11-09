@@ -34,8 +34,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classe\Livre.cs" />
     <Compile Include="Classe\Bibliotheque.cs" />
-    <Compile Include="Classe\TriAlphabetiqueBibliothequeParAuteur.cs" />
     <Compile Include="Truc à faire.cs" />
+    <Compile Include="Classe\Class de tri bibli.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

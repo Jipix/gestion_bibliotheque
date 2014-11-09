@@ -5,8 +5,7 @@
 //
 //A faire :
 //tri Alphabétique et alpha inversé pour les attributs :
-//	titre
-//	Cycle
+//	Cycle ==> probléme en cas de cycle null, actuellement je transforme un cycle null en " ", mais il faut que je le fasse apparaitre en dernier lors du tri alphabétique...
 //	Dessinateur
 //	Editeur
 //	Collection
@@ -17,7 +16,6 @@
 //Tri chronologique et inversé, par date de parution VO ou VF ou VO et VF pour les livres dont l'auteur est fr.
 //fonction recherche pour retrouver tout ces attributs sur Amazon ou autres(boycott amazon si possible)
 //Ajout de la couv et du 4éme de couv
-//Ajout d'un attribut nombre de pages
 //Amélioration de la fonction recherche pour des recherches par attributs ou "morceau" d'attributs
 //
 //A voir :

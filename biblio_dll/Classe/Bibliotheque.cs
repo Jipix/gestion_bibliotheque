@@ -90,6 +90,58 @@ namespace biblio_dll
 		}
 
 		/// <summary>
+		/// Tri les Livres par ordres alphabétiques de titre.
+		/// </summary>
+		public void TriParTitreAlphabétique ()
+		{
+			Bibli.Sort (new TriAlphabetiqueBibliothequeParTitre ());
+			foreach (Livre bouquin in Bibli) 
+			{
+				bouquin.Affiche ();
+				Console.WriteLine ();
+			}
+		}
+
+		/// <summary>
+		/// Tri les Livres par ordres alphabétiques inversé de titre.
+		/// </summary>
+		public void TriParTitreInverse ()
+		{
+			Bibli.Sort (new TriAlphabetiqueBibliothequeParTitre ());
+			Bibli.Reverse ();
+			foreach (Livre bouquin in Bibli) {
+				bouquin.Affiche ();
+				Console.WriteLine ();
+			}
+		}
+
+		/// <summary>
+		/// Tri les Livres par ordres alphabétiques de Cycle.
+		/// </summary>
+		public void TriParCycleAlphabétique ()
+		{
+			Bibli.Sort (new TriAlphabetiqueBibliothequeParCycle ());
+			foreach (Livre bouquin in Bibli) 
+			{
+				bouquin.Affiche ();
+				Console.WriteLine ();
+			}
+		}
+
+		/// <summary>
+		/// Tri les Livres par ordres alphabétiques inversé de titre.
+		/// </summary>
+		public void TriParCycleInverse ()
+		{
+			Bibli.Sort (new TriAlphabetiqueBibliothequeParCycle ());
+			Bibli.Reverse ();
+			foreach (Livre bouquin in Bibli) {
+				bouquin.Affiche ();
+				Console.WriteLine ();
+			}
+		}
+			
+		/// <summary>
 		/// Recherche un livre.
 		/// </summary>
 		public void RechercheUnLivre (object bouquin)
@@ -104,6 +156,11 @@ namespace biblio_dll
 			{
 				Console.WriteLine ("Le Livre n'est pas présent dans votre bibliothéque");
 			}
+		}
+
+		public void NombreDeLivre()
+		{
+			Console.WriteLine ("Votre bibliothéque contient " + Bibli.Count + " Livres");
 		}
 	}
 }
