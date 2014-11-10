@@ -40,7 +40,8 @@ namespace biblio_dll
 		public void AfficheMaBibliothéque ()
 		{
 
-			for (int i = 0; i < Bibli.Count; i++) {
+			for (int i = 0; i < Bibli.Count; i++)
+			{
 				Livre bouquin = (Livre)Bibli [i];
 				bouquin.Affiche ();
 				Console.WriteLine ();
@@ -83,7 +84,8 @@ namespace biblio_dll
 		{
 			Bibli.Sort (new TriAlphabetiqueBibliothequeParAuteur ());
 			Bibli.Reverse ();
-			foreach (Livre bouquin in Bibli) {
+			foreach (Livre bouquin in Bibli)
+			{
 				bouquin.Affiche ();
 				Console.WriteLine ();
 			}
@@ -109,7 +111,8 @@ namespace biblio_dll
 		{
 			Bibli.Sort (new TriAlphabetiqueBibliothequeParTitre ());
 			Bibli.Reverse ();
-			foreach (Livre bouquin in Bibli) {
+			foreach (Livre bouquin in Bibli) 
+			{
 				bouquin.Affiche ();
 				Console.WriteLine ();
 			}
@@ -123,8 +126,11 @@ namespace biblio_dll
 			Bibli.Sort (new TriAlphabetiqueBibliothequeParCycle ());
 			foreach (Livre bouquin in Bibli) 
 			{
-				bouquin.Affiche ();
-				Console.WriteLine ();
+				if (bouquin.Cycle != null)
+				{
+					bouquin.Affiche ();
+					Console.WriteLine ();
+				}
 			}
 		}
 
@@ -135,9 +141,13 @@ namespace biblio_dll
 		{
 			Bibli.Sort (new TriAlphabetiqueBibliothequeParCycle ());
 			Bibli.Reverse ();
-			foreach (Livre bouquin in Bibli) {
-				bouquin.Affiche ();
-				Console.WriteLine ();
+			foreach (Livre bouquin in Bibli) 
+			{
+				if (bouquin.Cycle != null)
+				{
+					bouquin.Affiche ();
+					Console.WriteLine ();
+				}
 			}
 		}
 			

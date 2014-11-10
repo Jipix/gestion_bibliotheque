@@ -43,9 +43,17 @@ namespace biblio_dll
 		{
 			Livre l1 = (Livre)bouquin1;
 			Livre l2 = (Livre)bouquin2;
-			int resultat = l1.Cycle.CompareTo (l2.Cycle);
-			return resultat;
+			if (l1.Cycle != null&&l2.Cycle!=null) 
+			{
+				int resultat = l1.Cycle.CompareTo (l2.Cycle);
+				return resultat;
+			} 
+			else
+			{
+				int resultat = l1.NomAuteur.CompareTo (l2.NomAuteur);
+				return resultat;
+			}
+		}
 		}
 	}
-}
 

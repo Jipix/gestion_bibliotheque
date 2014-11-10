@@ -5,7 +5,6 @@
 //
 //A faire :
 //tri Alphabétique et alpha inversé pour les attributs :
-//	Cycle ==> probléme en cas de cycle null, actuellement je transforme un cycle null en " ", mais il faut que je le fasse apparaitre en dernier lors du tri alphabétique...
 //	Dessinateur
 //	Editeur
 //	Collection
