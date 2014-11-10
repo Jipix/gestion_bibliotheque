@@ -21,7 +21,7 @@ namespace biblio_console
 			bibli.AjouterUnLivre (l3);
 			bibli.AjouterUnLivre (l4);
 			bibli.AjouterUnLivre (l6);
-			bibli.TriParCycleAlphabétique ();
+			bibli.AfficheMaBibliothéque ();
 			Console.WriteLine ();
 			bibli.NombreDeLivre ();
 			Console.ReadLine ();

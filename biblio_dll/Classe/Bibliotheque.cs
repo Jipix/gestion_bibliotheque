@@ -135,7 +135,7 @@ namespace biblio_dll
 		}
 
 		/// <summary>
-		/// Tri les Livres par ordres alphabétiques inversé de titre.
+		/// Tri les Livres par ordres alphabétiques inversé de Cycle.
 		/// </summary>
 		public void TriParCycleInverse ()
 		{
