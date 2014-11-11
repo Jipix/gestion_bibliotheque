@@ -14,14 +14,14 @@ namespace biblio_console
 			Livre l3 = new Livre {Titre = "Les mangeurs d'argile",Cycle="Hommes sans futur",Genre="Science fiction", NationalitéAuteur="Française", NomAuteur = "Pelot",PrenomAuteur = "Pierre",Edit = "Presses Pocket",Coll = "Science Fiction", Isbn="2266010956",DateDeParutionVF = "1981"};
 			Livre l4 = new Livre {Cycle="hommes sans futur",Titre = "Ce chasseur là",NomAuteur = "Pelot",PrenomAuteur = "Pierre",Edit = "Presses Pocket",Coll = "Science Fiction", Isbn="2266016164",DateDeParutionVF = "1985"};
 			Livre l5 = null;
-			Livre l6 = new Livre {Cycle="test",Titre = "test",NomAuteur = "test",PrenomAuteur = "test",Edit = "test",Coll = "test", Isbn="test",DateDeParutionVF = "test"};
+			Livre l6 = new Livre {Cycle="test",Titre = "test",NomAuteur = "test",PrenomAuteur = "test",Edit = "test",Coll = "test", Isbn="test",DateDeParutionVF = "test", PrenomDessinateurCouv="test", NomDessinateurCouv="test"};
 			Bibliotheque bibli=new Bibliotheque();
 			bibli.AjouterUnLivre (l1);
 			bibli.AjouterUnLivre (l2);
 			bibli.AjouterUnLivre (l3);
 			bibli.AjouterUnLivre (l4);
 			bibli.AjouterUnLivre (l6);
-			bibli.AfficheMaBibliothéque ();
+			bibli.TriParDessinateurAlphabétique ();
 			Console.WriteLine ();
 			bibli.NombreDeLivre ();
 			Console.ReadLine ();
