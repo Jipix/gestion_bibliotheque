@@ -36,9 +36,12 @@
     <Compile Include="Classe\Bibliotheque.cs" />
     <Compile Include="Truc à faire.cs" />
     <Compile Include="Classe\Class de tri bibli.cs" />
+    <Compile Include="RefClasses\LivreObj.cs" />
+    <Compile Include="RefClasses\AuteurObj.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Classe\" />
+    <Folder Include="RefClasses\" />
   </ItemGroup>
 </Project>
