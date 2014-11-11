@@ -21,11 +21,16 @@ namespace biblio_dll
 		public void AjouterUnLivre (object bouquin)
 		{
 			bool i=Bibli.Contains (bouquin);
-			if (i == false) 
+			if (i == false && bouquin != null) 
 			{
 				Bibli.Add (bouquin);
 			} 
-			else 
+			if (bouquin == null) 
+			{
+				Console.WriteLine ("Impossible d'ajouter un livre sans remplir au moins les champs suivant :");
+				Console.WriteLine ("Titre et Auteur");
+			}
+			if (i==true) 
 			{
 				Console.WriteLine ("Le Livre est déjà présent dans votre bibliothéque");
 			}

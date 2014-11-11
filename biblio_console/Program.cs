@@ -17,11 +17,7 @@ namespace biblio_console
 			Livre l6 = new Livre {Cycle="test",Titre = "test",NomAuteur = "test",PrenomAuteur = "test",Edit = "test",Coll = "test", Isbn="test",DateDeParutionVF = "test", PrenomDessinateurCouv="test", NomDessinateurCouv="test"};
 			Bibliotheque bibli=new Bibliotheque();
 			bibli.AjouterUnLivre (l1);
-			bibli.AjouterUnLivre (l2);
-			bibli.AjouterUnLivre (l3);
-			bibli.AjouterUnLivre (l4);
-			bibli.AjouterUnLivre (l6);
-			bibli.TriParDessinateurAlphabétique ();
+			bibli.AjouterUnLivre (l5);
 			Console.WriteLine ();
 			bibli.NombreDeLivre ();
 			Console.ReadLine ();

@@ -1,8 +1,6 @@
 ﻿
 
 
-//probléme à regler : plantage appli si ajout d'un objet null dans le tableau dynamique, peut etre avec une execption ?
-//
 //A faire :
 //fonction recherche pour retrouver tout ces attributs sur Amazon ou autres(boycott amazon si possible)
 //Ajout de la couv et du 4éme de couv
