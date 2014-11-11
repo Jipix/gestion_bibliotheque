@@ -4,9 +4,6 @@ using System.Collections;
 namespace biblio_dll
 {
 
-	/// <summary>
-	/// Objet bibliotheque.
-	/// </summary>
 	public class Bibliotheque
 	{
 		public ArrayList Bibli = new ArrayList ();

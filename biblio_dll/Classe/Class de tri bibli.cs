@@ -3,6 +3,8 @@ using System.Collections;
 
 namespace biblio_dll
 {
+	//Fichier contenant toutes les classes permettant les différents tri de la class bibliotheque.
+
 	public class TriAlphabetiqueBibliothequeParAuteur : IComparer
 	{
 

@@ -4,7 +4,6 @@
 //probléme à regler : plantage appli si ajout d'un objet null dans le tableau dynamique, peut etre avec une execption ?
 //
 //A faire :
-//Tri chronologique et inversé, par date de parution VO+VF pour les livres dont l'auteur est fr
 //fonction recherche pour retrouver tout ces attributs sur Amazon ou autres(boycott amazon si possible)
 //Ajout de la couv et du 4éme de couv
 //Amélioration de la fonction recherche pour des recherches par attributs ou "morceau" d'attributs
